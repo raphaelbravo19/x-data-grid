@@ -246,15 +246,6 @@ function GridColumnHeaderItem(props: GridColumnHeaderItemProps) {
           {...rootProps.slotProps?.columnHeaderFilterIconButton}
         />
       )}
-
-      {showSortIcon && (
-        <GridColumnHeaderSortIcon
-          direction={sortDirection}
-          index={sortIndex}
-          sortingOrder={sortingOrder}
-          disabled={!colDef.sortable}
-        />
-      )}
     </React.Fragment>
   );
 
